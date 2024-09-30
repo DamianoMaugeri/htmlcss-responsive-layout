@@ -105,6 +105,11 @@ main .container{
     display: block;
 }
 
+.hero iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 .card{
     display: flex;
     flex-wrap: wrap;
