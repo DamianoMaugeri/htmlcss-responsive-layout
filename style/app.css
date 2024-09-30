@@ -108,6 +108,7 @@ main .container{
 .hero iframe{
     width: 100%;
     aspect-ratio: 16/9;
+    display: block;
 }
 
 .card{
@@ -203,7 +204,7 @@ main .container{
 /* PRESENTATION */
 .presentation{
     margin-bottom: 60px;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .presentation img{
@@ -228,6 +229,10 @@ main .container{
 
 .presentation .tiramisù-img{
     text-align: center;
+}
+
+.presentation p{
+    font-size: 22px;
 }
 
 
