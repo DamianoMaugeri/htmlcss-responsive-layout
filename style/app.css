@@ -135,7 +135,7 @@ main .container{
 .row-social{
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 30px 0;
 }
 .col-social{
     text-align: center;
@@ -176,6 +176,39 @@ main .container{
     gap: 3px;
     justify-content: center;
 }
+
+/* banner */ 
+
+.row-banner{
+    display: none;
+    margin-bottom: 40px;
+}
+
+/* PRESENTATION */
+
+.presentation img{
+    max-width: 370px;
+}
+
+.presentation h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.presentation h2::after{
+    content: "";
+    width:100px ;
+    height: 1px;
+    border-bottom: 2px solid orange;
+    display: block;
+
+}
+
+.presentation .tiramisù-img{
+    text-align: center;
+}
+
 
 
 
@@ -224,6 +257,21 @@ main .container{
     .col-social{
         flex-grow:1 ;
     }
+
+    /* banner */ 
+
+    .row-banner{
+        display: block;
+    }
+
+    /* PRESENTATION */
+
+    .presentation .tiramisù-img{
+        float: left;
+        margin-right: 25px;
+    }
+
+
 
 
 
