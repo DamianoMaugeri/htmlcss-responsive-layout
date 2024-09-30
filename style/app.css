@@ -31,6 +31,11 @@ body{
 
 :root{
     --title-color: #4E3969;
+    --facebook-color:#1A77F3;
+    --twitter-color: #009EFF;
+    --instagram-color:#DC3D78;
+    --printerest-color: #E62222;
+    --youtube-color: #E62222;
 }
 
 
@@ -43,6 +48,7 @@ body{
     margin: auto;
 
 }
+
 
 
 
@@ -120,9 +126,56 @@ main .container{
     gap: 20px;
 }
 
+/* SOCIAL */
 
+.social-name{
+    display: none;
+}
 
+.row-social{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.col-social{
+    text-align: center;
+    font-size: 20px;
+    max-width: 20%;
 
+}
+
+.col-social > *{
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+}
+
+.facebook{
+    color: var(--facebook-color);
+}
+.twitter{
+    color: var(--twitter-color);
+}
+.instagram{
+    color: var(--instagram-color);
+}
+.printerest{
+    color: var(--printerest-color);
+}
+.youtube{
+    color: var(--youtube-color);
+}
+
+.facebook,
+.twitter,
+.instagram,
+.printerest,
+.youtube {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+}
 
 
 
@@ -160,6 +213,16 @@ main .container{
         flex-wrap: wrap;
         flex-direction: row;
         gap: 50px;
+    }
+
+    /*social*/
+
+    .row-social{
+        gap:20px;
+    }
+
+    .col-social{
+        flex-grow:1 ;
     }
 
 
@@ -200,6 +263,14 @@ main .container{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* social */
+
+    .social-name{
+        display: inline;
+        color: #000000;
+        font-size: 16px;    
     }
 
 
