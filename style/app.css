@@ -82,6 +82,10 @@ main .container{
 
 /* hero */
 
+.hero{
+    padding-top: 60px;
+}
+
 .type{
     color: gray;
     line-height: 30px;
@@ -185,6 +189,10 @@ main .container{
 }
 
 /* PRESENTATION */
+.presentation{
+    margin-bottom: 60px;
+    line-height: 30px;
+}
 
 .presentation img{
     max-width: 370px;
@@ -207,6 +215,49 @@ main .container{
 
 .presentation .tiramisù-img{
     text-align: center;
+}
+
+
+/* footer */
+
+.page-footer{
+    background-color: #7C69A4;
+    padding:25px 0;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffff;
+    row-gap: 20px;
+}
+
+.aziend-link ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.aziend-info{
+    text-align: center;
+    line-height: 25px;
+}
+
+.aziend-link li{
+    text-decoration: underline;  
+}
+
+.aziend-link a{
+    padding: 3px 5px;
+}
+
+
+.row-footer .col{
+    width: 100%;
 }
 
 
@@ -271,6 +322,10 @@ main .container{
         margin-right: 25px;
     }
 
+    .presentation{
+        margin-bottom: 100px;
+    }
+
 
 
 
@@ -319,6 +374,23 @@ main .container{
         display: inline;
         color: #000000;
         font-size: 16px;    
+    }
+
+    /* footer */
+
+    .aziend-info{
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .aziend-link ul{
+        justify-content: flex-end;
+    }
+
+
+
+    .row-footer .col{
+        max-width: 50%;
     }
 
 
