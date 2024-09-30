@@ -186,6 +186,13 @@ main .container{
     justify-content: center;
 }
 
+.hero .card,
+.col-social > *{
+    box-shadow:5px 0px 10px 1px #bbbaba;
+}
+
+
+
 /* banner */ 
 
 .row-banner{
