@@ -16,7 +16,195 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+
+}
+
+
+body{
+    background-color: #F6F5F3;
+    font-family:  "Montserrat",  Helvetica , sans-serif;
+}
+
+
+/* root */
+
+:root{
+    --title-color: #4E3969;
+}
+
+
+
+/* Layout */
+
+.container{
+    width: 100%;
+    padding: 0 25px;
+    margin: auto;
+
+}
+
+
+
+
+
+
+/* header rules */
+
+header{
+    background-color: #ffffff;
+}
+
+.main-nav{
+    line-height: 90px;
+    text-align: center;
+
+}
+
+.main-nav a{
+    font-family: "Nerko One", cursive; 
+    color: #FF9614;
+    font-size: 40px;
+}
+
+/* MAIN */
+
+main .container{
+    padding: 0 15px;
+}
+
+
+/* hero */
+
+.type{
+    color: gray;
+    line-height: 30px;
+}
+
+.title{
+    color: var(--title-color);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.title-description{
+    display: none;
+}
+
+.card img{
+    display: block;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .col-img,
+.card .col-prep{
+    width: 100%;
+}
+
+.col-prep{
+    padding: 35px;
+    background-color: #ffffff;
+}
+
+.col-prep h3{
+    margin-bottom: 30px;
+}
+
+.prep{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+/* tablet */
+@media (min-width: 768px){
+
+    /* header */
+    .main-nav{
+        text-align: left;
+    }
+
+    /* main */
+
+    main .container{
+        padding: 0 60px;
+    }
+
+    /* hero */
+
+    .title{
+        font-size: 28px;
+    }
+
+    .title-description{
+        display: inline;
+    }
+
+    .prep{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+
+
+
+}
+
+
+/* desktop */
+
+@media (min-width:992px ){
+
+    /* layout */
+
+    main .container{
+        max-width: 1470px;
+    }
+
+
+
+
+    /* hero */
+
+    
+    .title{
+        font-size: 36px;
+    }
+
+    .card .col-img{
+        width: calc(8.5 * 100% / 12);
+    }
+
+    .card .col-prep{
+        width: calc(3.5 * 100% / 12);
+    }
+
+    .prep{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+
 }
 
 
